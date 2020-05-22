@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class MazeManager : MonoBehaviour
 {
-
     public int Rows, Columns;
     public GameObject aWall;
     public GameObject aFloor;
     public float Size = 1f; //Should be the same size as the walls and or floor
+
+    public Camera Camera;
 
     private Cell[,] _cells;
 
@@ -17,7 +18,7 @@ public class MazeManager : MonoBehaviour
     void Start()
     {
         InitializeMaze();
-
+        Camera.transform.position = new Vector3((Rows / 2 * Size),(Rows + Columns) / 2 * Size,(Columns / 2 * Size) - 2.5f);
         MazeStrategy mazeStrategy = new HuntAndKillStrategy(_cells);
         mazeStrategy.Create();
     }
