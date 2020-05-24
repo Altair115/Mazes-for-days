@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Assets.Scripts;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MazeManager : MonoBehaviour
 {
@@ -11,22 +12,20 @@ public class MazeManager : MonoBehaviour
     public float Size = 1f; //Should be the same size as the walls and or floor
 
     public Camera Camera;
+    public InputField WidthField;
+    public InputField HeightField;
 
     private Cell[,] _cells;
     private GameObject _maze;
-
+    private float _cameraOffset = 2.5f;
 
     void Start()
     {
         _maze = new GameObject();
         _maze.name = "Maze";
 
-        InitializeMaze();
-
-        Camera.transform.position = new Vector3((Rows / 2 * Size),(Rows + Columns) / 2 * Size,(Columns / 2 * Size) - 2.5f);
-        
-        MazeStrategy mazeStrategy = new HuntAndKillStrategy(_cells);
-        mazeStrategy.Create();
+        WidthField.characterValidation = InputField.CharacterValidation.Integer;
+        HeightField.characterValidation = InputField.CharacterValidation.Integer;
     }
 
     /// <summary>
@@ -71,5 +70,32 @@ public class MazeManager : MonoBehaviour
                 _cells[r, c].WallSouthObject.transform.Rotate(Vector3.up * 90f);
             }
         }
+    }
+
+    /// <summary>
+    /// Simple Clearing function for the maze
+    /// </summary>
+    private void PurgeMaze()
+    {
+        foreach (Transform child in _maze.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    public void RegenerateMaze()
+    {
+        PurgeMaze();
+
+        Rows = int.Parse(WidthField.text);
+        Columns = int.Parse(HeightField.text);
+
+        InitializeMaze();
+
+        Camera.transform.position = new Vector3(((Rows / 2) * Size) - _cameraOffset, ((Rows + Columns) / 3) * Size, ((Columns / 2) * Size) - _cameraOffset);
+        Camera.orthographicSize = (((Rows + Columns) / 3) * Size);
+
+        MazeStrategy mazeStrategy = new HuntAndKillStrategy(_cells);
+        mazeStrategy.Create();
     }
 }
