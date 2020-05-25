@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// Direction Randomizer Singleton
+    /// </summary>
     public class RandomDirection
     {
         private static readonly RandomDirection Instance = new RandomDirection();

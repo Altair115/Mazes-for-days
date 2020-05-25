@@ -33,6 +33,9 @@ namespace Assets.Scripts
             }
         }
 
+        /// <summary>
+        /// Drunken walk or Kill until its not possible anymore
+        /// </summary>
         private void Kill()
         {
             while (PathStillUseable(_currentRow, _currentColumn))
@@ -68,6 +71,10 @@ namespace Assets.Scripts
             }
         }
 
+        /// <summary>
+        /// Finds the next unvisited cell with an adjacent visited cell to start killing or walking again
+        /// True until proven other wise by it
+        /// </summary>
         private void Hunt()
         {
             _creationComplete = true;
@@ -89,6 +96,12 @@ namespace Assets.Scripts
             }
         }
 
+        /// <summary>
+        /// Checks if the path is still useable or not by checking if the tiles around it are visited
+        /// </summary>
+        /// <param name="row">used for checking around the seeker on the row axis</param>
+        /// <param name="column">used for checking around the seeker on the column axis</param>
+        /// <returns></returns>
         private bool PathStillUseable(int row, int column)
         {
             var useablePaths = 0;
@@ -108,6 +121,12 @@ namespace Assets.Scripts
             return useablePaths > 0;
         }
 
+        /// <summary>
+        /// check if the cell is available
+        /// </summary>
+        /// <param name="row">the row position of the cell</param>
+        /// <param name="column">the column position of the cell</param>
+        /// <returns></returns>
         private bool CellAvailable(int row, int column)
         {
             if (row >= 0 && row < Rows && column >= 0 && column < Columns && !Cells[row, column].Visited)
@@ -116,12 +135,22 @@ namespace Assets.Scripts
                 return false;
         }
 
+        /// <summary>
+        /// destroys a wall when building new paths to reach new cells
+        /// </summary>
+        /// <param name="wall">the wall in question</param>
         private void DestroyWall(GameObject wall)
         {
             if(wall != null)
                 GameObject.Destroy(wall);
         }
 
+        /// <summary>
+        /// check if cell has visited neigbors
+        /// </summary>
+        /// <param name="row">the row position of the cell</param>
+        /// <param name="column">the column position of the cell</param>
+        /// <returns></returns>
         private bool CellHasVisitedNeighborCell(int row, int column)
         {
             var neighborsVisited = 0;
@@ -146,6 +175,11 @@ namespace Assets.Scripts
             return neighborsVisited > 0;
         }
 
+        /// <summary>
+        /// destroys the neighboring wall to continue building the maze
+        /// </summary>
+        /// <param name="row">the row position of the cell</param>
+        /// <param name="column">the column position of the cell</param>
         private void DestroyNeighboringWall(int row, int column)
         {
             bool destroyedWall = false;

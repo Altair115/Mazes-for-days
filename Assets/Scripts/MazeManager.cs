@@ -4,6 +4,9 @@ using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// The Manager Class that manages the creation of the maze
+/// </summary>
 public class MazeManager : MonoBehaviour
 {
     public int Rows, Columns;
@@ -83,6 +86,9 @@ public class MazeManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// (Re)generates the maze with given parameters
+    /// </summary>
     public void RegenerateMaze()
     {
         PurgeMaze();

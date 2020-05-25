@@ -2,6 +2,9 @@
 
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// the abstract Strategy used for implementing concrete strategies
+    /// </summary>
     public abstract class MazeStrategy
     {
         protected Cell[,] Cells;
