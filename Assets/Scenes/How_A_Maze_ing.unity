@@ -721,9 +721,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rows: 5
   Columns: 5
-  aWall: {fileID: 4258682761012450736, guid: 45f368cdeab36c846991053a3b4de593, type: 3}
+  aWall: {fileID: 4736684221962634773, guid: 45f368cdeab36c846991053a3b4de593, type: 3}
   aFloor: {fileID: 7972376183856243591, guid: b37e80822a8958f409f84f497efe3fef, type: 3}
-  Size: 5.7
+  Size: 5
   Camera: {fileID: 963194227}
   WidthField: {fileID: 864045831}
   HeightField: {fileID: 1303699798}
