@@ -14,6 +14,7 @@ public class MazeManager : MonoBehaviour
     public GameObject aFloor;
     public float Size = 1f; //Should be the same size as the walls and or floor
 
+    public GameObject Player;
     public Camera Camera;
     public InputField WidthField;
     public InputField HeightField;
@@ -103,5 +104,20 @@ public class MazeManager : MonoBehaviour
 
         MazeStrategy mazeStrategy = new HuntAndKillStrategy(_cells);
         mazeStrategy.Create();
+    }
+
+    /// <summary>
+    /// Summon Playable Character into the maze
+    /// </summary>
+    public void SummonPlayer()
+    {
+        if (Player.activeInHierarchy)
+        {
+            Player.transform.position = new Vector3(0, 1, 0);
+        }
+        else
+        {
+            Player = Instantiate(Player, new Vector3(0, 1, 0), Quaternion.identity) as GameObject;
+        }
     }
 }
