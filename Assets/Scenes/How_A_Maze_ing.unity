@@ -558,13 +558,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.9659258, y: 0, z: 0, w: 0.2588191}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 150, y: 0, z: 0}
 --- !u!1 &864045829
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rows: 5
   Columns: 5
-  aWall: {fileID: 4736684221962634773, guid: 45f368cdeab36c846991053a3b4de593, type: 3}
+  Walls:
+  - {fileID: 4736684221962634773, guid: 45f368cdeab36c846991053a3b4de593, type: 3}
+  - {fileID: 2966174102799704768, guid: 23cdc7ab0c394b440bdca1641c207316, type: 3}
   aFloor: {fileID: 7972376183856243591, guid: b37e80822a8958f409f84f497efe3fef, type: 3}
   Size: 5
   Player: {fileID: 8251451690507963784, guid: bb78ab986e3c1e747b91f13ceaba5ca4, type: 3}

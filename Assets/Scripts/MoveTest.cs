@@ -4,9 +4,6 @@ namespace Assets.Scripts
 {
     /// <summary>
     /// Test Player script Will be rewritten and refactored after test purpose is completed
-    /// 
-    /// Bug: Dashing doesn't work
-    /// 
     /// </summary>
     [AddComponentMenu("Mythirial Test/Move Test")]
     public class MoveTest : MonoBehaviour
@@ -22,8 +19,6 @@ namespace Assets.Scripts
 
         [SerializeField]
         private float fallMultiplier = 2.5f;
-        [Range(0, 1)]
-        public float airControlPercent;
 
         public Vector3 desiredMoveDirection;
         public bool blockRotationPlayer;

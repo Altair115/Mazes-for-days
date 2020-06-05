@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class MazeManager : MonoBehaviour
 {
     public int Rows, Columns;
-    public GameObject aWall;
+    public GameObject[] Walls;
     public GameObject aFloor;
     public float Size = 1f; //Should be the same size as the walls and or floor
 
@@ -51,27 +51,39 @@ public class MazeManager : MonoBehaviour
 
                 if (c == 0)
                 {
-                    _cells[r, c].WallWestObject = Instantiate(aWall, new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
+                    if (Random.value > 0.8) //%20 percent chance
+                        _cells[r, c].WallWestObject = Instantiate(Walls[1], new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
+                    else
+                        _cells[r, c].WallWestObject = Instantiate(Walls[0], new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
                     _cells[r, c].WallWestObject.name = "West Wall " + r + "," + c;
                     _cells[r, c].WallWestObject.transform.parent = _maze.transform;
                 }
 
-                _cells[r, c].WallEastObject = Instantiate(aWall, new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
+                if (Random.value > 0.8) //%20 percent chance
+                    _cells[r, c].WallEastObject = Instantiate(Walls[1], new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
+                else
+                    _cells[r, c].WallEastObject = Instantiate(Walls[0], new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
                 _cells[r, c].WallEastObject.name = "East Wall " + r + "," + c;
                 _cells[r, c].WallEastObject.transform.parent = _maze.transform;
+                _cells[r, c].WallEastObject.transform.Rotate(Vector3.up * 180f);
 
                 if (r == 0)
                 {
-                    _cells[r, c].WallNorthObject = Instantiate(aWall, new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                    if (Random.value > 0.8) //%20 percent chance
+                        _cells[r, c].WallNorthObject = Instantiate(Walls[1], new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                    else
+                        _cells[r, c].WallNorthObject = Instantiate(Walls[0], new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                     _cells[r, c].WallNorthObject.name = "North Wall " + r + "," + c;
                     _cells[r, c].WallNorthObject.transform.parent = _maze.transform;
                     _cells[r, c].WallNorthObject.transform.Rotate(Vector3.up * 90f);
                 }
-
-                _cells[r, c].WallSouthObject = Instantiate(aWall, new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                if (Random.value > 0.8) //%20 percent chance
+                    _cells[r, c].WallSouthObject = Instantiate(Walls[1], new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                else
+                    _cells[r, c].WallSouthObject = Instantiate(Walls[0], new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                 _cells[r, c].WallSouthObject.name = "South Wall " + r + "," + c;
                 _cells[r, c].WallSouthObject.transform.parent = _maze.transform;
-                _cells[r, c].WallSouthObject.transform.Rotate(Vector3.up * 90f);
+                _cells[r, c].WallSouthObject.transform.Rotate(Vector3.up * 270f);
             }
         }
     }
