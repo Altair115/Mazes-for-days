@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_f13b41af88cf68434578284aaf699e39" kind="dir">
+    <compoundname>D:/GitHub/Mazes-for-days/Assets/Scripts</compoundname>
+    <innerfile refid="_cell_8cs">Cell.cs</innerfile>
+    <innerfile refid="_hunt_and_kill_strategy_8cs">HuntAndKillStrategy.cs</innerfile>
+    <innerfile refid="_maze_manager_8cs">MazeManager.cs</innerfile>
+    <innerfile refid="_maze_strategy_8cs">MazeStrategy.cs</innerfile>
+    <innerfile refid="_move_test_8cs">MoveTest.cs</innerfile>
+    <innerfile refid="_random_direction_8cs">RandomDirection.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

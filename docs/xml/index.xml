@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="class_assets_1_1_scripts_1_1_cell" kind="class"><name>Assets::Scripts::Cell</name>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1aa9fa8799e1f16a2c763ed086ee2a9a5d" kind="variable"><name>Visited</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1a4d47ff766f922b9446b42039a85deb2b" kind="variable"><name>WallNorthObject</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1a8881cb787be6ade7f9cf8eff63414445" kind="variable"><name>WallSouthObject</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1ab5c241e52917321319f7a829476742d4" kind="variable"><name>WallEastObject</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1a3f9887223d6224c38846a5b1603f5335" kind="variable"><name>WallWestObject</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_cell_1a9a62771aad78f73bfd8495f4660025aa" kind="variable"><name>FloorObject</name></member>
+  </compound>
+  <compound refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy" kind="class"><name>Assets::Scripts::HuntAndKillStrategy</name>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aaa41ac863dec0f82e73335713203c63f" kind="variable"><name>_currentRow</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a509ffb9c1bd9f688d8adfba78eb99055" kind="variable"><name>_currentColumn</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad9182bd3c509184a8d81e9f8048d5e02" kind="variable"><name>_creationComplete</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a527754a45c0ef7190379b893ace6c8a0" kind="function"><name>HuntAndKillStrategy</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a1996f9aff2a918d2b189a5e9e95ab73e" kind="function"><name>Create</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aa675f5710907b48b13ed084a29f735c2" kind="function"><name>HuntAndKill</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a323104d721b778f199cedd15636a452e" kind="function"><name>Kill</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9fce79cd529f0cf585a8d920763a579b" kind="function"><name>Hunt</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a52f75724e0b7260787d72a8d2aed9371" kind="function"><name>PathStillUseable</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a05d50bafe365c1e1701f45ff4e042fee" kind="function"><name>CellAvailable</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a4546c32c96fd4651accd34c37f53ffde" kind="function"><name>DestroyWall</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad5b461180c4dbfc1285f5150760495a7" kind="function"><name>CellHasVisitedNeighborCell</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9a2c56eafcda78effe213f3ecca048c5" kind="function"><name>DestroyNeighboringWall</name></member>
+  </compound>
+  <compound refid="class_maze_manager" kind="class"><name>MazeManager</name>
+    <member refid="class_maze_manager_1ab3e59763330c035a7dff6461f558ae5f" kind="variable"><name>Rows</name></member>
+    <member refid="class_maze_manager_1a56ef74c2fdea9e14a79eb1f914007f5a" kind="variable"><name>Walls</name></member>
+    <member refid="class_maze_manager_1ac6df8066b7a21d82cbb4b893044a1aa0" kind="variable"><name>aFloor</name></member>
+    <member refid="class_maze_manager_1a69db7f58ce780b5dc76d992d05d3d0d9" kind="variable"><name>Size</name></member>
+    <member refid="class_maze_manager_1a9bd32a2fc653f706b236e2fdb63c9f1c" kind="variable"><name>Player</name></member>
+    <member refid="class_maze_manager_1ad77fa0a8279293d2fd5ce416d0b85d23" kind="variable"><name>Camera</name></member>
+    <member refid="class_maze_manager_1aad1efeed684e7d9961818e7a61ef1590" kind="variable"><name>Menu</name></member>
+    <member refid="class_maze_manager_1a0831347f7bbcfd81efb8a8d5ac3330f6" kind="variable"><name>WidthField</name></member>
+    <member refid="class_maze_manager_1ae4d7de7b739fc156e55c1ea13cfb0997" kind="variable"><name>HeightField</name></member>
+    <member refid="class_maze_manager_1a3743273c0b090a8ed5a57340ce5f6803" kind="variable"><name>CellShaded</name></member>
+    <member refid="class_maze_manager_1a93ab686aa2c222aff7d4f113c9b19f80" kind="variable"><name>DefaultLitURP</name></member>
+    <member refid="class_maze_manager_1a49dee91cdbbc043d4e97e74e29226e36" kind="variable"><name>Columns</name></member>
+    <member refid="class_maze_manager_1a9f09994a6e18dcda991257eff883dddf" kind="variable"><name>_cells</name></member>
+    <member refid="class_maze_manager_1ae4303ab17682f9dca5cbde32a7f026f3" kind="variable"><name>_maze</name></member>
+    <member refid="class_maze_manager_1a9d66e89669eafed8cb0e5a2198752825" kind="variable"><name>CameraOffset</name></member>
+    <member refid="class_maze_manager_1adc060755fce28c049d9b1b9e84885857" kind="function"><name>Start</name></member>
+    <member refid="class_maze_manager_1ac04377e3f7a4ef7c6271ca9121e0b4ad" kind="function"><name>InitializeMaze</name></member>
+    <member refid="class_maze_manager_1a56458d254649c62e0a96006fe04985ee" kind="function"><name>PurgeMaze</name></member>
+    <member refid="class_maze_manager_1a1971c021198591256f871370c7441c32" kind="function"><name>RegenerateMaze</name></member>
+    <member refid="class_maze_manager_1a2107dc21e74cc5de5ad9540a8bee58b3" kind="function"><name>SummonPlayer</name></member>
+    <member refid="class_maze_manager_1aa3df2d0999336cf15a485b1e08c6d642" kind="function"><name>ToggleMenu</name></member>
+    <member refid="class_maze_manager_1afda4d2d342dcc613d72a4d96f1d814a6" kind="function"><name>ToggleShader</name></member>
+  </compound>
+  <compound refid="class_assets_1_1_scripts_1_1_maze_strategy" kind="class"><name>Assets::Scripts::MazeStrategy</name>
+    <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1a70293bb901fba5ed91ce616bb3efe906" kind="variable"><name>Cells</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1a80ee5941d3c6ccb84edb852b8cd98e02" kind="variable"><name>Rows</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1a6c20d7177cfda9ef04104702a7983db3" kind="variable"><name>Columns</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1abfaf63cb7d8bac2f96a3b27894563a75" kind="function"><name>MazeStrategy</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1acabdbc6dd5fed01042101c7eca8f2f80" kind="function"><name>Create</name></member>
+  </compound>
+  <compound refid="class_assets_1_1_scripts_1_1_move_test" kind="class"><name>Assets::Scripts::MoveTest</name>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a47a3cb17431953c8d5c42019639ee4c4" kind="variable"><name>moveSpeed</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1af2e114a5b71b213891a442e87f42a2fe" kind="variable"><name>rotationSpeed</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a54b0bf963fad5905e1ac1c95b772f64c" kind="variable"><name>jumpHeight</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a10610455f590d00e227b5b6358adf5cf" kind="variable"><name>groundDistance</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a3dda868e2be300ab126c766bc521f3aa" kind="variable"><name>fallMultiplier</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a6f13c3f09ff5d6536a8f30af32ce8b28" kind="variable"><name>_camera</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a8bc868b502e7efeca47eb51155b5d83b" kind="variable"><name>_body</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1ad694edb819b1be575a3be7d77df6875a" kind="variable"><name>_input</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1ab067add98e59ff44b65c62551cfde778" kind="variable"><name>_isGrounded</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a4f4dc17d7fa3a47bb888dfbbb45ad61d" kind="variable"><name>_groundChecker</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1ab8fce999c30f926378d4726702dab3c8" kind="variable"><name>desiredMoveDirection</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a1bcbb2ec84fc2ca29187d64ccf70cf84" kind="variable"><name>blockRotationPlayer</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a950215a04b027f69caf21d8e60bb0dbc" kind="variable"><name>Ground</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1aea15d8a2b1837f50c05fdc63a3ad9d54" kind="function"><name>Awake</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a97485b2c94aa28c4fd032654326e0bb4" kind="function"><name>Update</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1ab41048b698dd65fe95806dbc378012ad" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a578dcb8c39acc2e0ccaf748c7c520c64" kind="function"><name>MOVE</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1a58f8f3353eeb932bd9f09f365eae1399" kind="function"><name>MOVEPhysics</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_move_test_1af1c78ebb5eb971bedbc40708fa501564" kind="function"><name>CamLock</name></member>
+  </compound>
+  <compound refid="class_assets_1_1_scripts_1_1_random_direction" kind="class"><name>Assets::Scripts::RandomDirection</name>
+    <member refid="class_assets_1_1_scripts_1_1_random_direction_1a2bf1e831acbc92d73827d450b5819d4d" kind="variable"><name>Instance</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_random_direction_1a4406483ceb5a5674e3a253402f2edf6c" kind="variable"><name>_directions</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_random_direction_1ae6bd24e19050fef928df557ca4fa3cfd" kind="function"><name>RandomDirection</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_random_direction_1adb5f21432bba29446b4929483628f4d2" kind="function"><name>GetInstance</name></member>
+    <member refid="class_assets_1_1_scripts_1_1_random_direction_1acf2b6259b3164000b613dc552bb85a65" kind="function"><name>GetDirection</name></member>
+  </compound>
+  <compound refid="namespace_assets" kind="namespace"><name>Assets</name>
+  </compound>
+  <compound refid="namespace_assets_1_1_scripts" kind="namespace"><name>Assets::Scripts</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_unity_editor" kind="namespace"><name>UnityEditor</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_cell_8cs" kind="file"><name>Cell.cs</name>
+  </compound>
+  <compound refid="_hunt_and_kill_strategy_8cs" kind="file"><name>HuntAndKillStrategy.cs</name>
+  </compound>
+  <compound refid="_maze_manager_8cs" kind="file"><name>MazeManager.cs</name>
+  </compound>
+  <compound refid="_maze_strategy_8cs" kind="file"><name>MazeStrategy.cs</name>
+  </compound>
+  <compound refid="_move_test_8cs" kind="file"><name>MoveTest.cs</name>
+  </compound>
+  <compound refid="_random_direction_8cs" kind="file"><name>RandomDirection.cs</name>
+  </compound>
+  <compound refid="dir_84bbf7b3c7f28a5a18725745e1505219" kind="dir"><name>D:/GitHub/Mazes-for-days/Assets</name>
+  </compound>
+  <compound refid="dir_f13b41af88cf68434578284aaf699e39" kind="dir"><name>D:/GitHub/Mazes-for-days/Assets/Scripts</name>
+  </compound>
+</doxygenindex>

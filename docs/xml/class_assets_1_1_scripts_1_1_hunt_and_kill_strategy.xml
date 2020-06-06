@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy" kind="class" language="C#" prot="public">
+    <compoundname>Assets::Scripts::HuntAndKillStrategy</compoundname>
+    <basecompoundref refid="class_assets_1_1_scripts_1_1_maze_strategy" prot="public" virt="non-virtual">Assets.Scripts.MazeStrategy</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aaa41ac863dec0f82e73335713203c63f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Assets.Scripts.HuntAndKillStrategy._currentRow</definition>
+        <argsstring></argsstring>
+        <name>_currentRow</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="10" column="21" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a509ffb9c1bd9f688d8adfba78eb99055" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Assets.Scripts.HuntAndKillStrategy._currentColumn</definition>
+        <argsstring></argsstring>
+        <name>_currentColumn</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="10" column="34" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad9182bd3c509184a8d81e9f8048d5e02" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.HuntAndKillStrategy._creationComplete</definition>
+        <argsstring></argsstring>
+        <name>_creationComplete</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="11" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a527754a45c0ef7190379b893ace6c8a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assets.Scripts.HuntAndKillStrategy.HuntAndKillStrategy</definition>
+        <argsstring>(Cell[,] cells)</argsstring>
+        <name>HuntAndKillStrategy</name>
+        <param>
+          <type><ref refid="class_assets_1_1_scripts_1_1_cell" kindref="compound">Cell</ref></type>
+          <declname>cells</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="13" column="16" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a1996f9aff2a918d2b189a5e9e95ab73e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Assets.Scripts.HuntAndKillStrategy.Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <reimplements refid="class_assets_1_1_scripts_1_1_maze_strategy_1acabdbc6dd5fed01042101c7eca8f2f80">Create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="17" column="30" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aa675f5710907b48b13ed084a29f735c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.HuntAndKillStrategy.HuntAndKill</definition>
+        <argsstring>()</argsstring>
+        <name>HuntAndKill</name>
+        <briefdescription>
+<para>Finds Paths to create a Maze </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="25" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a323104d721b778f199cedd15636a452e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.HuntAndKillStrategy.Kill</definition>
+        <argsstring>()</argsstring>
+        <name>Kill</name>
+        <briefdescription>
+<para>Drunken walk or Kill until its not possible anymore </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="39" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="39" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9fce79cd529f0cf585a8d920763a579b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.HuntAndKillStrategy.Hunt</definition>
+        <argsstring>()</argsstring>
+        <name>Hunt</name>
+        <briefdescription>
+<para>Finds the next unvisited cell with an adjacent visited cell to start killing or walking again True until proven other wise by it </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="78" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="78" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a52f75724e0b7260787d72a8d2aed9371" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.HuntAndKillStrategy.PathStillUseable</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>PathStillUseable</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the path is still useable or not by checking if the tiles around it are visited </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used for checking around the seeker on the row axis</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used for checking around the seeker on the column axis</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="105" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="105" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a05d50bafe365c1e1701f45ff4e042fee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.HuntAndKillStrategy.CellAvailable</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>CellAvailable</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>check if the cell is available </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the row position of the cell</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the column position of the cell</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="130" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a4546c32c96fd4651accd34c37f53ffde" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.HuntAndKillStrategy.DestroyWall</definition>
+        <argsstring>(GameObject wall)</argsstring>
+        <name>DestroyWall</name>
+        <param>
+          <type>GameObject</type>
+          <declname>wall</declname>
+        </param>
+        <briefdescription>
+<para>destroys a wall when building new paths to reach new cells </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wall</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the wall in question</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="142" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad5b461180c4dbfc1285f5150760495a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.HuntAndKillStrategy.CellHasVisitedNeighborCell</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>CellHasVisitedNeighborCell</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>check if cell has visited neigbors </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the row position of the cell</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the column position of the cell</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="154" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="154" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9a2c56eafcda78effe213f3ecca048c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.HuntAndKillStrategy.DestroyNeighboringWall</definition>
+        <argsstring>(int row, int column)</argsstring>
+        <name>DestroyNeighboringWall</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>destroys the neighboring wall to continue building the maze </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the row position of the cell</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the column position of the cell</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="183" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="183" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Hunt &amp; Kill Algorithm </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Assets.Scripts.HuntAndKillStrategy</label>
+        <link refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MazeStrategy</label>
+        <link refid="class_assets_1_1_scripts_1_1_maze_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assets.Scripts.HuntAndKillStrategy</label>
+        <link refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MazeStrategy</label>
+        <link refid="class_assets_1_1_scripts_1_1_maze_strategy"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Cells</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Assets.Scripts.Cell</label>
+        <link refid="class_assets_1_1_scripts_1_1_cell"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" line="8" column="11" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/HuntAndKillStrategy.cs" bodystart="9" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad9182bd3c509184a8d81e9f8048d5e02" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>_creationComplete</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a509ffb9c1bd9f688d8adfba78eb99055" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>_currentColumn</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aaa41ac863dec0f82e73335713203c63f" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>_currentRow</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a05d50bafe365c1e1701f45ff4e042fee" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>CellAvailable</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1ad5b461180c4dbfc1285f5150760495a7" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>CellHasVisitedNeighborCell</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1a70293bb901fba5ed91ce616bb3efe906" prot="protected" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>Cells</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a1996f9aff2a918d2b189a5e9e95ab73e" prot="public" virt="virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>Create</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9a2c56eafcda78effe213f3ecca048c5" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>DestroyNeighboringWall</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a4546c32c96fd4651accd34c37f53ffde" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>DestroyWall</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a9fce79cd529f0cf585a8d920763a579b" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>Hunt</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1aa675f5710907b48b13ed084a29f735c2" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>HuntAndKill</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a527754a45c0ef7190379b893ace6c8a0" prot="public" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>HuntAndKillStrategy</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a323104d721b778f199cedd15636a452e" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>Kill</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1abfaf63cb7d8bac2f96a3b27894563a75" prot="protected" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>MazeStrategy</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy_1a52f75724e0b7260787d72a8d2aed9371" prot="private" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>PathStillUseable</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_maze_strategy_1a80ee5941d3c6ccb84edb852b8cd98e02" prot="protected" virt="non-virtual"><scope>Assets::Scripts::HuntAndKillStrategy</scope><name>Rows</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

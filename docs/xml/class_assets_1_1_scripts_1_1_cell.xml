@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_assets_1_1_scripts_1_1_cell" kind="class" language="C#" prot="public">
+    <compoundname>Assets::Scripts::Cell</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1aa9fa8799e1f16a2c763ed086ee2a9a5d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.Cell.Visited</definition>
+        <argsstring></argsstring>
+        <name>Visited</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="10" column="21" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1a4d47ff766f922b9446b42039a85deb2b" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Assets.Scripts.Cell.WallNorthObject</definition>
+        <argsstring></argsstring>
+        <name>WallNorthObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="11" column="27" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1a8881cb787be6ade7f9cf8eff63414445" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Assets.Scripts.Cell.WallSouthObject</definition>
+        <argsstring></argsstring>
+        <name>WallSouthObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="11" column="43" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1ab5c241e52917321319f7a829476742d4" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Assets.Scripts.Cell.WallEastObject</definition>
+        <argsstring></argsstring>
+        <name>WallEastObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="11" column="59" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1a3f9887223d6224c38846a5b1603f5335" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Assets.Scripts.Cell.WallWestObject</definition>
+        <argsstring></argsstring>
+        <name>WallWestObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="11" column="74" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_cell_1a9a62771aad78f73bfd8495f4660025aa" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Assets.Scripts.Cell.FloorObject</definition>
+        <argsstring></argsstring>
+        <name>FloorObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="11" column="89" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Data class that used for building the maze </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="8" column="11" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1a9a62771aad78f73bfd8495f4660025aa" prot="private" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>FloorObject</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1aa9fa8799e1f16a2c763ed086ee2a9a5d" prot="public" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>Visited</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1ab5c241e52917321319f7a829476742d4" prot="private" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>WallEastObject</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1a4d47ff766f922b9446b42039a85deb2b" prot="public" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>WallNorthObject</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1a8881cb787be6ade7f9cf8eff63414445" prot="private" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>WallSouthObject</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_cell_1a3f9887223d6224c38846a5b1603f5335" prot="private" virt="non-virtual"><scope>Assets::Scripts::Cell</scope><name>WallWestObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

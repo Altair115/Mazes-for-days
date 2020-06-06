@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespace_assets_1_1_scripts" kind="namespace" language="C#">
+    <compoundname>Assets::Scripts</compoundname>
+    <innerclass refid="class_assets_1_1_scripts_1_1_cell" prot="public">Assets::Scripts::Cell</innerclass>
+    <innerclass refid="class_assets_1_1_scripts_1_1_hunt_and_kill_strategy" prot="public">Assets::Scripts::HuntAndKillStrategy</innerclass>
+    <innerclass refid="class_assets_1_1_scripts_1_1_maze_strategy" prot="public">Assets::Scripts::MazeStrategy</innerclass>
+    <innerclass refid="class_assets_1_1_scripts_1_1_move_test" prot="public">Assets::Scripts::MoveTest</innerclass>
+    <innerclass refid="class_assets_1_1_scripts_1_1_random_direction" prot="public">Assets::Scripts::RandomDirection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/Cell.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_maze_manager" kind="class" language="C#" prot="public">
+    <compoundname>MazeManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_maze_manager_1ab3e59763330c035a7dff6461f558ae5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MazeManager.Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="12" column="16" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a56ef74c2fdea9e14a79eb1f914007f5a" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] MazeManager.Walls</definition>
+        <argsstring></argsstring>
+        <name>Walls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="13" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1ac6df8066b7a21d82cbb4b893044a1aa0" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MazeManager.aFloor</definition>
+        <argsstring></argsstring>
+        <name>aFloor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="14" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a69db7f58ce780b5dc76d992d05d3d0d9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MazeManager.Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="15" column="18" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a9bd32a2fc653f706b236e2fdb63c9f1c" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MazeManager.Player</definition>
+        <argsstring></argsstring>
+        <name>Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="17" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1ad77fa0a8279293d2fd5ce416d0b85d23" prot="public" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera MazeManager.Camera</definition>
+        <argsstring></argsstring>
+        <name>Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="18" column="19" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1aad1efeed684e7d9961818e7a61ef1590" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MazeManager.Menu</definition>
+        <argsstring></argsstring>
+        <name>Menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="19" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a0831347f7bbcfd81efb8a8d5ac3330f6" prot="public" static="no" mutable="no">
+        <type>InputField</type>
+        <definition>InputField MazeManager.WidthField</definition>
+        <argsstring></argsstring>
+        <name>WidthField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="20" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1ae4d7de7b739fc156e55c1ea13cfb0997" prot="public" static="no" mutable="no">
+        <type>InputField</type>
+        <definition>InputField MazeManager.HeightField</definition>
+        <argsstring></argsstring>
+        <name>HeightField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="21" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a3743273c0b090a8ed5a57340ce5f6803" prot="public" static="no" mutable="no">
+        <type>Shader</type>
+        <definition>Shader MazeManager.CellShaded</definition>
+        <argsstring></argsstring>
+        <name>CellShaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="23" column="19" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a93ab686aa2c222aff7d4f113c9b19f80" prot="public" static="no" mutable="no">
+        <type>Shader</type>
+        <definition>Shader MazeManager.DefaultLitURP</definition>
+        <argsstring></argsstring>
+        <name>DefaultLitURP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="24" column="19" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_maze_manager_1a49dee91cdbbc043d4e97e74e29226e36" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MazeManager.Columns</definition>
+        <argsstring></argsstring>
+        <name>Columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="12" column="21" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1a9f09994a6e18dcda991257eff883dddf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_assets_1_1_scripts_1_1_cell" kindref="compound">Cell</ref>[,]</type>
+        <definition>Cell [,] MazeManager._cells</definition>
+        <argsstring></argsstring>
+        <name>_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="26" column="18" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_maze_manager_1ae4303ab17682f9dca5cbde32a7f026f3" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MazeManager._maze</definition>
+        <argsstring></argsstring>
+        <name>_maze</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="27" column="24" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_maze_manager_1a9d66e89669eafed8cb0e5a2198752825" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float MazeManager.CameraOffset</definition>
+        <argsstring></argsstring>
+        <name>CameraOffset</name>
+        <initializer>= 2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="28" column="25" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_maze_manager_1adc060755fce28c049d9b1b9e84885857" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="30" column="10" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="30" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_maze_manager_1ac04377e3f7a4ef7c6271ca9121e0b4ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.InitializeMaze</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeMaze</name>
+        <briefdescription>
+<para>Initialization of the maze </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="45" column="18" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="45" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_maze_manager_1a56458d254649c62e0a96006fe04985ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.PurgeMaze</definition>
+        <argsstring>()</argsstring>
+        <name>PurgeMaze</name>
+        <briefdescription>
+<para>Simple Clearing function for the maze </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="101" column="18" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="101" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_maze_manager_1a1971c021198591256f871370c7441c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.RegenerateMaze</definition>
+        <argsstring>()</argsstring>
+        <name>RegenerateMaze</name>
+        <briefdescription>
+<para>(Re)generates the maze with given parameters </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="112" column="17" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="112" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_maze_manager_1a2107dc21e74cc5de5ad9540a8bee58b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.SummonPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>SummonPlayer</name>
+        <briefdescription>
+<para>Summon Playable Character into the maze </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="131" column="17" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="131" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_maze_manager_1aa3df2d0999336cf15a485b1e08c6d642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.ToggleMenu</definition>
+        <argsstring>()</argsstring>
+        <name>ToggleMenu</name>
+        <briefdescription>
+<para>Toggles the Maze menu with an animation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="146" column="17" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="146" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_maze_manager_1afda4d2d342dcc613d72a4d96f1d814a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MazeManager.ToggleShader</definition>
+        <argsstring>()</argsstring>
+        <name>ToggleShader</name>
+        <briefdescription>
+<para>Dirty Solution to toggle between shaders </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="162" column="17" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="162" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Manager Class that manages the creation of the maze </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MazeManager</label>
+        <link refid="class_maze_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MazeManager</label>
+        <link refid="class_maze_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" line="10" column="7" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MazeManager.cs" bodystart="11" bodyend="212"/>
+    <listofallmembers>
+      <member refid="class_maze_manager_1a9f09994a6e18dcda991257eff883dddf" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>_cells</name></member>
+      <member refid="class_maze_manager_1ae4303ab17682f9dca5cbde32a7f026f3" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>_maze</name></member>
+      <member refid="class_maze_manager_1ac6df8066b7a21d82cbb4b893044a1aa0" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>aFloor</name></member>
+      <member refid="class_maze_manager_1ad77fa0a8279293d2fd5ce416d0b85d23" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Camera</name></member>
+      <member refid="class_maze_manager_1a9d66e89669eafed8cb0e5a2198752825" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>CameraOffset</name></member>
+      <member refid="class_maze_manager_1a3743273c0b090a8ed5a57340ce5f6803" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>CellShaded</name></member>
+      <member refid="class_maze_manager_1a49dee91cdbbc043d4e97e74e29226e36" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>Columns</name></member>
+      <member refid="class_maze_manager_1a93ab686aa2c222aff7d4f113c9b19f80" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>DefaultLitURP</name></member>
+      <member refid="class_maze_manager_1ae4d7de7b739fc156e55c1ea13cfb0997" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>HeightField</name></member>
+      <member refid="class_maze_manager_1ac04377e3f7a4ef7c6271ca9121e0b4ad" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>InitializeMaze</name></member>
+      <member refid="class_maze_manager_1aad1efeed684e7d9961818e7a61ef1590" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Menu</name></member>
+      <member refid="class_maze_manager_1a9bd32a2fc653f706b236e2fdb63c9f1c" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Player</name></member>
+      <member refid="class_maze_manager_1a56458d254649c62e0a96006fe04985ee" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>PurgeMaze</name></member>
+      <member refid="class_maze_manager_1a1971c021198591256f871370c7441c32" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>RegenerateMaze</name></member>
+      <member refid="class_maze_manager_1ab3e59763330c035a7dff6461f558ae5f" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Rows</name></member>
+      <member refid="class_maze_manager_1a69db7f58ce780b5dc76d992d05d3d0d9" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Size</name></member>
+      <member refid="class_maze_manager_1adc060755fce28c049d9b1b9e84885857" prot="private" virt="non-virtual"><scope>MazeManager</scope><name>Start</name></member>
+      <member refid="class_maze_manager_1a2107dc21e74cc5de5ad9540a8bee58b3" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>SummonPlayer</name></member>
+      <member refid="class_maze_manager_1aa3df2d0999336cf15a485b1e08c6d642" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>ToggleMenu</name></member>
+      <member refid="class_maze_manager_1afda4d2d342dcc613d72a4d96f1d814a6" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>ToggleShader</name></member>
+      <member refid="class_maze_manager_1a56ef74c2fdea9e14a79eb1f914007f5a" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>Walls</name></member>
+      <member refid="class_maze_manager_1a0831347f7bbcfd81efb8a8d5ac3330f6" prot="public" virt="non-virtual"><scope>MazeManager</scope><name>WidthField</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

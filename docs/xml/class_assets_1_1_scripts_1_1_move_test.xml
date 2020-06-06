@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_assets_1_1_scripts_1_1_move_test" kind="class" language="C#" prot="public">
+    <compoundname>Assets::Scripts::MoveTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a47a3cb17431953c8d5c42019639ee4c4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assets.Scripts.MoveTest.moveSpeed</definition>
+        <argsstring></argsstring>
+        <name>moveSpeed</name>
+        <initializer>= 7.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="12" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1af2e114a5b71b213891a442e87f42a2fe" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assets.Scripts.MoveTest.rotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeed</name>
+        <initializer>= 15f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="14" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a54b0bf963fad5905e1ac1c95b772f64c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assets.Scripts.MoveTest.jumpHeight</definition>
+        <argsstring></argsstring>
+        <name>jumpHeight</name>
+        <initializer>= 6f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="16" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a10610455f590d00e227b5b6358adf5cf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assets.Scripts.MoveTest.groundDistance</definition>
+        <argsstring></argsstring>
+        <name>groundDistance</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="18" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a3dda868e2be300ab126c766bc521f3aa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assets.Scripts.MoveTest.fallMultiplier</definition>
+        <argsstring></argsstring>
+        <name>fallMultiplier</name>
+        <initializer>= 2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="21" column="23" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a6f13c3f09ff5d6536a8f30af32ce8b28" prot="private" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera Assets.Scripts.MoveTest._camera</definition>
+        <argsstring></argsstring>
+        <name>_camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="28" column="24" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a8bc868b502e7efeca47eb51155b5d83b" prot="private" static="no" mutable="no">
+        <type>Rigidbody</type>
+        <definition>Rigidbody Assets.Scripts.MoveTest._body</definition>
+        <argsstring></argsstring>
+        <name>_body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="29" column="27" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1ad694edb819b1be575a3be7d77df6875a" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Assets.Scripts.MoveTest._input</definition>
+        <argsstring></argsstring>
+        <name>_input</name>
+        <initializer>= Vector3.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="30" column="25" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1ab067add98e59ff44b65c62551cfde778" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.MoveTest._isGrounded</definition>
+        <argsstring></argsstring>
+        <name>_isGrounded</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="31" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a4f4dc17d7fa3a47bb888dfbbb45ad61d" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Assets.Scripts.MoveTest._groundChecker</definition>
+        <argsstring></argsstring>
+        <name>_groundChecker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="32" column="27" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1ab8fce999c30f926378d4726702dab3c8" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Assets.Scripts.MoveTest.desiredMoveDirection</definition>
+        <argsstring></argsstring>
+        <name>desiredMoveDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="23" column="24" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a1bcbb2ec84fc2ca29187d64ccf70cf84" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assets.Scripts.MoveTest.blockRotationPlayer</definition>
+        <argsstring></argsstring>
+        <name>blockRotationPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="24" column="21" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assets_1_1_scripts_1_1_move_test_1a950215a04b027f69caf21d8e60bb0dbc" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Assets.Scripts.MoveTest.Ground</definition>
+        <argsstring></argsstring>
+        <name>Ground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="25" column="26" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1aea15d8a2b1837f50c05fdc63a3ad9d54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+<para>Called in when this enters the scene </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="37" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1a97485b2c94aa28c4fd032654326e0bb4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="45" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1ab41048b698dd65fe95806dbc378012ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <briefdescription>
+<para>update meant for Physics related coding </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="56" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1a578dcb8c39acc2e0ccaf748c7c520c64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.MOVE</definition>
+        <argsstring>()</argsstring>
+        <name>MOVE</name>
+        <briefdescription>
+<para>MOVE (Subject to change) Basis of the movement system </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="65" column="22" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="65" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1a58f8f3353eeb932bd9f09f365eae1399" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.MOVEPhysics</definition>
+        <argsstring>()</argsstring>
+        <name>MOVEPhysics</name>
+        <briefdescription>
+<para>MOVE physics function </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="97" column="14" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assets_1_1_scripts_1_1_move_test_1af1c78ebb5eb971bedbc40708fa501564" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assets.Scripts.MoveTest.CamLock</definition>
+        <argsstring>()</argsstring>
+        <name>CamLock</name>
+        <briefdescription>
+<para>Calculate player rotation to be relative to camera rotation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="108" column="14" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="108" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Test Player script Will be rewritten and refactored after test purpose is completed </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Assets.Scripts.MoveTest</label>
+        <link refid="class_assets_1_1_scripts_1_1_move_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assets.Scripts.MoveTest</label>
+        <link refid="class_assets_1_1_scripts_1_1_move_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" line="9" column="11" bodyfile="D:/GitHub/Mazes-for-days/Assets/Scripts/MoveTest.cs" bodystart="10" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a8bc868b502e7efeca47eb51155b5d83b" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>_body</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a6f13c3f09ff5d6536a8f30af32ce8b28" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>_camera</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a4f4dc17d7fa3a47bb888dfbbb45ad61d" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>_groundChecker</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1ad694edb819b1be575a3be7d77df6875a" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>_input</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1ab067add98e59ff44b65c62551cfde778" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>_isGrounded</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1aea15d8a2b1837f50c05fdc63a3ad9d54" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>Awake</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a1bcbb2ec84fc2ca29187d64ccf70cf84" prot="public" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>blockRotationPlayer</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1af1c78ebb5eb971bedbc40708fa501564" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>CamLock</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1ab8fce999c30f926378d4726702dab3c8" prot="public" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>desiredMoveDirection</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a3dda868e2be300ab126c766bc521f3aa" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>fallMultiplier</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1ab41048b698dd65fe95806dbc378012ad" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>FixedUpdate</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a950215a04b027f69caf21d8e60bb0dbc" prot="public" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>Ground</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a10610455f590d00e227b5b6358adf5cf" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>groundDistance</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a54b0bf963fad5905e1ac1c95b772f64c" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>jumpHeight</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a578dcb8c39acc2e0ccaf748c7c520c64" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>MOVE</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a58f8f3353eeb932bd9f09f365eae1399" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>MOVEPhysics</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a47a3cb17431953c8d5c42019639ee4c4" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>moveSpeed</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1af2e114a5b71b213891a442e87f42a2fe" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>rotationSpeed</name></member>
+      <member refid="class_assets_1_1_scripts_1_1_move_test_1a97485b2c94aa28c4fd032654326e0bb4" prot="private" virt="non-virtual"><scope>Assets::Scripts::MoveTest</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
