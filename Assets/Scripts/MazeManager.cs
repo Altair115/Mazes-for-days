@@ -20,12 +20,18 @@ public class MazeManager : MonoBehaviour
     public InputField WidthField;
     public InputField HeightField;
 
+    public Shader CellShaded;
+    public Shader DefaultLitURP;
+
     private Cell[,] _cells;
     private GameObject _maze;
-    private float _cameraOffset = 2.5f;
+    private const float CameraOffset = 2.5f;
 
     void Start()
     {
+        DefaultLitURP = Shader.Find("Universal Render Pipeline/Lit");
+        CellShaded = Shader.Find("Shader Graphs/CellShaded");
+
         _maze = new GameObject();
         _maze.name = "Maze";
 
@@ -52,16 +58,16 @@ public class MazeManager : MonoBehaviour
 
                 if (c == 0)
                 {
-                    if (Random.value > 0.8) //%20 percent chance
-                        _cells[r, c].WallWestObject = Instantiate(Walls[1], new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
+                    if (Random.value > 0.7) //%30 percent chance
+                        _cells[r, c].WallWestObject = Instantiate(Walls[Random.Range(1, Walls.Length)], new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
                     else
                         _cells[r, c].WallWestObject = Instantiate(Walls[0], new Vector3(r * Size, 0, (c * Size) - (Size / 2f)), Quaternion.identity) as GameObject;
                     _cells[r, c].WallWestObject.name = "West Wall " + r + "," + c;
                     _cells[r, c].WallWestObject.transform.parent = _maze.transform;
                 }
 
-                if (Random.value > 0.8) //%20 percent chance
-                    _cells[r, c].WallEastObject = Instantiate(Walls[1], new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
+                if (Random.value > 0.7) //%30 percent chance
+                    _cells[r, c].WallEastObject = Instantiate(Walls[Random.Range(1, Walls.Length)], new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
                 else
                     _cells[r, c].WallEastObject = Instantiate(Walls[0], new Vector3(r * Size, 0, (c * Size) + (Size / 2f)), Quaternion.identity) as GameObject;
                 _cells[r, c].WallEastObject.name = "East Wall " + r + "," + c;
@@ -70,16 +76,16 @@ public class MazeManager : MonoBehaviour
 
                 if (r == 0)
                 {
-                    if (Random.value > 0.8) //%20 percent chance
-                        _cells[r, c].WallNorthObject = Instantiate(Walls[1], new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                    if (Random.value > 0.7) //%30 percent chance
+                        _cells[r, c].WallNorthObject = Instantiate(Walls[Random.Range(1, Walls.Length)], new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                     else
                         _cells[r, c].WallNorthObject = Instantiate(Walls[0], new Vector3((r * Size) - (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                     _cells[r, c].WallNorthObject.name = "North Wall " + r + "," + c;
                     _cells[r, c].WallNorthObject.transform.parent = _maze.transform;
                     _cells[r, c].WallNorthObject.transform.Rotate(Vector3.up * 90f);
                 }
-                if (Random.value > 0.8) //%20 percent chance
-                    _cells[r, c].WallSouthObject = Instantiate(Walls[1], new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
+                if (Random.value > 0.7) //%30 percent chance
+                    _cells[r, c].WallSouthObject = Instantiate(Walls[Random.Range(1, Walls.Length)], new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                 else
                     _cells[r, c].WallSouthObject = Instantiate(Walls[0], new Vector3((r * Size) + (Size / 2f), 0, c * Size), Quaternion.identity) as GameObject;
                 _cells[r, c].WallSouthObject.name = "South Wall " + r + "," + c;
@@ -112,7 +118,7 @@ public class MazeManager : MonoBehaviour
 
         InitializeMaze();
 
-        Camera.transform.position = new Vector3(((Rows / 2) * Size) - _cameraOffset, ((Rows + Columns) / 3) * Size, ((Columns / 2) * Size) - _cameraOffset);
+        Camera.transform.position = new Vector3(((Rows / 2) * Size) - CameraOffset, ((Rows + Columns) / 3) * Size, ((Columns / 2) * Size) - CameraOffset);
         Camera.orthographicSize = (((Rows + Columns) / 3) * Size);
 
         MazeStrategy mazeStrategy = new HuntAndKillStrategy(_cells);
@@ -146,6 +152,60 @@ public class MazeManager : MonoBehaviour
             {
                 bool IsOpen = animator.GetBool("IsOpen");
                 animator.SetBool("IsOpen", !IsOpen);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Dirty Solution to toggle between shaders
+    /// </summary>
+    public void ToggleShader()
+    {
+        foreach (Transform o in _maze.transform)
+        {
+            // If the GameObject has a material
+            if (o.gameObject.GetComponent<Renderer>())
+            {
+                // Get the materials of the GameObject
+                foreach (var material in o.gameObject.GetComponent<Renderer>().materials)
+                {
+                    // Set the shader of the material of the GameObject
+                    material.shader = material.shader == CellShaded ? DefaultLitURP : CellShaded;
+                }
+            }
+
+            if (o.transform.childCount != 0)
+            {
+                foreach (Transform child in o.transform)
+                {
+                    if (child.transform.childCount != 0)
+                    {
+                        foreach (Transform decorations in child.transform)
+                        {
+                            // If the GameObject has a material
+                            if (decorations.gameObject.GetComponent<Renderer>())
+                            {
+                                // Get the materials of the GameObject
+                                foreach (var material in decorations.gameObject.GetComponent<Renderer>().materials)
+                                {
+                                    // Set the shader of the material of the GameObject
+                                    material.shader = material.shader == CellShaded ? DefaultLitURP : CellShaded;
+                                }
+                            }
+                        }
+                    }
+                    // If the GameObject has a material
+                    if (child.gameObject.GetComponent<Renderer>())
+                    {
+                        // Get the materials of the GameObject
+                        foreach (var material in child.gameObject.GetComponent<Renderer>().materials)
+                        {
+                            // Set the shader of the material of the GameObject
+                            material.shader = material.shader == CellShaded ? DefaultLitURP : CellShaded;
+                        }
+                    }
+                    
+                }
             }
         }
     }
