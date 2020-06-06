@@ -16,6 +16,7 @@ public class MazeManager : MonoBehaviour
 
     public GameObject Player;
     public Camera Camera;
+    public GameObject Menu;
     public InputField WidthField;
     public InputField HeightField;
 
@@ -130,6 +131,22 @@ public class MazeManager : MonoBehaviour
         else
         {
             Player = Instantiate(Player, new Vector3(0, 1, 0), Quaternion.identity) as GameObject;
+        }
+    }
+
+    /// <summary>
+    /// Toggles the Maze menu with an animation
+    /// </summary>
+    public void ToggleMenu()
+    {
+        if (Menu != null)
+        {
+            Animator animator = Menu.GetComponent<Animator>();
+            if (animator != null)
+            {
+                bool IsOpen = animator.GetBool("IsOpen");
+                animator.SetBool("IsOpen", !IsOpen);
+            }
         }
     }
 }
