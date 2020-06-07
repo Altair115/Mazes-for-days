@@ -130,13 +130,16 @@ public class MazeManager : MonoBehaviour
     /// </summary>
     public void SummonPlayer()
     {
-        if (Player.activeInHierarchy)
+        if (_maze.transform.childCount != 0)
         {
-            Player.transform.position = new Vector3(0, 1, 0);
-        }
-        else
-        {
-            Player = Instantiate(Player, new Vector3(0, 1, 0), Quaternion.identity) as GameObject;
+            if (Player.activeInHierarchy)
+            {
+                Player.transform.position = new Vector3(0, 1, 0);
+            }
+            else
+            {
+                Player = Instantiate(Player, new Vector3(0, 1, 0), Quaternion.identity) as GameObject;
+            }
         }
     }
 
