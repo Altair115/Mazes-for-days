@@ -2,6 +2,8 @@
 A maze generator.  
 Unity Version: 2019.3.15f1
 
+docs page: https://altair115.github.io/Mazes-for-days/html/index.html
+
 
 # Controls for the player
 
