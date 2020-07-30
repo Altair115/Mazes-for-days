@@ -113,7 +113,12 @@ public class MazeManager : MonoBehaviour
     {
         PurgeMaze();
 
+        if(WidthField.text == "" || WidthField.text == "0")
+            return;
         Rows = int.Parse(WidthField.text);
+
+        if (HeightField.text == "" || HeightField.text == "0")
+            return;
         Columns = int.Parse(HeightField.text);
 
         InitializeMaze();
