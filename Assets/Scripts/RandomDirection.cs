@@ -6,22 +6,12 @@ namespace Assets.Scripts
     /// <summary>
     /// Direction Randomizer Singleton
     /// </summary>
-    public class RandomDirection
+    public static class RandomDirection
     {
-        private static readonly RandomDirection Instance = new RandomDirection();
-
-        private RandomDirection(){}
-
-        private readonly List<string> _directions = new List<string>(){"North", "South", "West", "East"};
-
-        public static RandomDirection GetInstance()
-        {
-            return Instance;
-        }
-
-        public string GetDirection()
-        {
-            return _directions[Random.Range(0, _directions.Count)];
-        }
+        public const int North = 0;
+        public const int South = 1;
+        public const int West = 2;
+        public const int East = 3;
+        public static int Random() => UnityEngine.Random.Range(0, 4);
     }
 }
