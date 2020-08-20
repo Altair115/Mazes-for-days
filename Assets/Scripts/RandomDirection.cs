@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Assets.Scripts
 {
     /// <summary>
-    /// Direction Randomizer Singleton
+    /// Direction Randomizer
     /// </summary>
     public static class RandomDirection
     {
