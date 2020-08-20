@@ -1,6 +1,6 @@
 # Mazes-for-days
 A maze generator.
-Assignment discription [here](../docs/DTT_Test_-_Unity_(EN)_2020_v1.1)  
+Assignment discription [here](./docs/DTT-Test-Unity-(EN)-2020-v1.1.pdf)  
 Unity Version: 2019.3.15f1
 
 docs page: https://altair115.github.io/Mazes-for-days/html/index.html
