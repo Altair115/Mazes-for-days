@@ -42,25 +42,25 @@ namespace Assets.Scripts
             {
                 int direction = RandomDirection.Random();
 
-                if (direction == 0 && CellAvailable(_currentRow - 1, _currentColumn)) //North
+                if (direction == RandomDirection.North && CellAvailable(_currentRow - 1, _currentColumn)) //North
                 {
                     DestroyWall(Cells[_currentRow, _currentColumn].WallNorthObject);
                     DestroyWall(Cells[_currentRow - 1, _currentColumn].WallSouthObject);
                     _currentRow--;
                 }
-                else if (direction == 1 && CellAvailable(_currentRow + 1, _currentColumn)) //South
+                else if (direction == RandomDirection.South && CellAvailable(_currentRow + 1, _currentColumn)) //South
                 {
                     DestroyWall(Cells[_currentRow, _currentColumn].WallSouthObject);
                     DestroyWall(Cells[_currentRow + 1, _currentColumn].WallNorthObject);
                     _currentRow++;
                 }
-                else if (direction == 3 && CellAvailable(_currentRow, _currentColumn + 1)) //East
+                else if (direction == RandomDirection.East && CellAvailable(_currentRow, _currentColumn + 1)) //East
                 {
                     DestroyWall(Cells[_currentRow, _currentColumn].WallEastObject);
                     DestroyWall(Cells[_currentRow, _currentColumn + 1].WallWestObject);
                     _currentColumn++;
                 }
-                else if (direction == 2 && CellAvailable(_currentRow, _currentColumn - 1)) //West
+                else if (direction == RandomDirection.West && CellAvailable(_currentRow, _currentColumn - 1)) //West
                 {
                     DestroyWall(Cells[_currentRow, _currentColumn].WallWestObject);
                     DestroyWall(Cells[_currentRow, _currentColumn - 1].WallEastObject);
@@ -188,25 +188,25 @@ namespace Assets.Scripts
             {
                 int direction = RandomDirection.Random();
 
-                if (direction == 0 && row > 0 && Cells[row - 1, column].Visited) //North
+                if (direction == RandomDirection.North && row > 0 && Cells[row - 1, column].Visited) //North
                 {
                     DestroyWall(Cells[row, column].WallNorthObject);
                     DestroyWall(Cells[row - 1, column].WallSouthObject);
                     destroyedWall = true;
                 }
-                else if (direction == 1 && row < (Rows - 2) && Cells[row + 1, column].Visited) //South
+                else if (direction == RandomDirection.South && row < (Rows - 2) && Cells[row + 1, column].Visited) //South
                 {
                     DestroyWall(Cells[row, column].WallSouthObject);
                     DestroyWall(Cells[row + 1, column].WallNorthObject);
                     destroyedWall = true;
                 }
-                else if (direction == 3 && column > 0 && Cells[row, column - 1].Visited) //West
+                else if (direction == RandomDirection.West && column > 0 && Cells[row, column - 1].Visited) //West
                 {
                     DestroyWall(Cells[row, column].WallWestObject);
                     DestroyWall(Cells[row, column - 1].WallEastObject);
                     destroyedWall = true;
                 }
-                else if (direction == 2 && column < (Columns - 2) && Cells[row, column + 1].Visited) //East
+                else if (direction == RandomDirection.East && column < (Columns - 2) && Cells[row, column + 1].Visited) //East
                 {
                     DestroyWall(Cells[row, column].WallEastObject);
                     DestroyWall(Cells[row, column + 1].WallWestObject);
